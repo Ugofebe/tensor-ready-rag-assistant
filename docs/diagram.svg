@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300">
+  <style>
+    .box { fill: #f6f8fa; stroke: #30343f; stroke-width:1.5; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size:14px; fill:#111827; }
+    .arrow { stroke:#0f172a; stroke-width:2; fill:none; marker-end: url(#arrowhead);} 
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f172a" />
+    </marker>
+  </defs>
+
+  <!-- Boxes -->
+  <rect x="20" y="40" width="160" height="60" class="box" rx="8"/>
+  <text x="100" y="78" text-anchor="middle" class="label">Files (PDF/TXT)</text>
+
+  <rect x="220" y="40" width="160" height="60" class="box" rx="8"/>
+  <text x="300" y="78" text-anchor="middle" class="label">Loaders (PyPDF/TextLoader)</text>
+
+  <rect x="420" y="40" width="160" height="60" class="box" rx="8"/>
+  <text x="500" y="78" text-anchor="middle" class="label">Chunking (RecursiveCharacterTextSplitter)</text>
+
+  <rect x="620" y="40" width="160" height="60" class="box" rx="8"/>
+  <text x="700" y="78" text-anchor="middle" class="label">Embeddings (HF: all-MiniLM-L6-v2)</text>
+
+  <rect x="820" y="40" width="160" height="60" class="box" rx="8"/>
+  <text x="900" y="78" text-anchor="middle" class="label">ChromaDB (ml_publications)</text>
+
+  <rect x="1020" y="40" width="160" height="60" class="box" rx="8"/>
+  <text x="1100" y="78" text-anchor="middle" class="label">Retriever + LLM (RAG)</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M180 70 L220 70"/>
+  <path class="arrow" d="M380 70 L420 70"/>
+  <path class="arrow" d="M580 70 L620 70"/>
+  <path class="arrow" d="M780 70 L820 70"/>
+  <path class="arrow" d="M980 70 L1020 70"/>
+
+  <!-- Bottom caption -->
+  <text x="600" y="150" text-anchor="middle" class="label">Flow: Files → Loaders → Chunking → Embeddings → ChromaDB → Retriever → LLM → Client</text>
+</svg>

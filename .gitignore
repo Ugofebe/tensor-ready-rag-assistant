@@ -1,5 +1,7 @@
 #data
 data/
+data2/
+scripts/
 secret_key.py
 
 # Environments
