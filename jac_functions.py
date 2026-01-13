@@ -24,21 +24,7 @@ collection = client.get_or_create_collection(
     name="ml_publications",
     metadata={"hnsw:space": "cosine"}
 )
-# 3. Wrap the existing collection in a LangChain Chroma vectorstore
-# vectorstore = Chroma(
-#     client=client,
-#     collection_name="ml_publications",
-#     embedding_function=embeddings
-# )
 
-# 4. Get retriever for RAG
-# retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
-
-
-# # Set up our embedding model
-# embeddings = HuggingFaceEmbeddings(
-#     model_name="all-MiniLM-L6-v2"
-#     )
 
 # Chunk files
 def chunk_research_paper(paper_content, title):

@@ -51,7 +51,7 @@ def load_pdf_to_strings(documents_path):
     
     print(f"\n📂 Total documents loaded: {len(documents)}")
     
-    # # Extract content as strings and return
+    # Extract content as strings and return
     # publications = [doc.page_content for doc in documents]
     # Extract content as strings and return
     publications = [doc.page_content for doc in documents if doc.page_content.strip()]

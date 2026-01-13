@@ -194,11 +194,3 @@ Or manually: create repo on github.com and follow their push instructions.
 
 ## Contact
 Author: **Ugochukwu Febechukwu**
-
----
-
-If you'd like, I can also:
-- Create a `README` badge and `LICENSE` file for you. ✅
-- Create and push the GitHub repo now (public or private). ⚡
-
-What would you like me to do next? (create LICENSE / push repo / update .gitignore / other)
