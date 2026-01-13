@@ -1,5 +1,7 @@
 # Jacmate — RAG Research Assistant 🔎🤖
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)]
+
 **Short description:** Jacmate is a Retrieval-Augmented Generation (RAG) system that ingests local research PDFs and text files into a persistent ChromaDB vector store, uses LangChain tooling for loading, chunking and embedding, and calls OpenAI chat models (via LangChain) to produce human-readable answers to research questions.
 
 ---

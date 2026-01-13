@@ -13,6 +13,7 @@ ENV/
 
 #Others
 __pycache__
+.DS_Store
 research_db copy
 research_db/
 insert_chroma_openai.py
@@ -21,3 +22,4 @@ test.ipynb
 scripts/
 publication.docx
 publication.pdf
+Procfile
